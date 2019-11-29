@@ -28,24 +28,31 @@ class GalleryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gallery)
 
-        mRecyclerView=findViewById(R.id.mRecyclerView)
+        mRecyclerView = findViewById(R.id.mRecyclerView)
 
         getFromSdcard()
 
         imageGalleyList.clear()
 
-        for (path in fileArray) {
-            imageGalleyList.add(ImageGallery("", path))
-        }
+        /*  for (path in fileArray) {
+              imageGalleyList.add(ImageGallery("", path))
+          }*/
 
+        for (i in listFile!!.indices) {
+
+//            fileArray.add(listFile!![i].absolutePath)
+
+            imageGalleyList.add(ImageGallery(listFile!![i].name, listFile!![i].absolutePath))
+
+        }
 
 
         mRecyclerView?.layoutManager = GridLayoutManager(this, 2)
 
-    /*    //This will for default android divider
-        mRecyclerView?.addItemDecoration(GridItemDecoration(10, 2))*/
+        /*    //This will for default android divider
+            mRecyclerView?.addItemDecoration(GridItemDecoration(10, 2))*/
 
-        val movieListAdapter = GalleryAdapter(this,imageGalleyList)
+        val movieListAdapter = GalleryAdapter(this, imageGalleyList)
         mRecyclerView?.adapter = movieListAdapter
         movieListAdapter.updateList(imageGalleyList)
 
