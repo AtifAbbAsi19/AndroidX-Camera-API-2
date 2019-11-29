@@ -6,7 +6,7 @@ import android.os.Environment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.droid.myapplication.R
-import com.droid.myapplication.adapters.GalleryAdapter
+import com.droid.myapplication.ui.adapters.GalleryAdapter
 import com.droid.myapplication.data.ImageGallery
 import java.io.File
 import java.io.FilenameFilter

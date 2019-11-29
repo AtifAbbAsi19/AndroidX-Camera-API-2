@@ -1,4 +1,4 @@
-package com.droid.myapplication.adapters
+package com.droid.myapplication.ui.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,6 @@ import com.bumptech.glide.Glide
 import com.droid.myapplication.R
 import com.droid.myapplication.data.ImageGallery
 import com.droid.myapplication.ui.DetailViewActivity
-import com.droid.myapplication.ui.GalleryActivity
 import kotlinx.android.synthetic.main.gallery_item_view.view.*
 
 class GalleryAdapter(
