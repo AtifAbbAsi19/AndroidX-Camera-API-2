@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/size1"
+        android:title="640 x 480" />
+    <item
+        android:id="@+id/size2"
+        android:title=" 1024 x 768" />
+    <item
+        android:id="@+id/size3"
+        android:title=" 1280 x 720 (Recommended)"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/size4"
+        android:title="1280 x 768" />
+    <item
+        android:id="@+id/size5"
+        android:title=" 1280 x 920" />
+    <item
+        android:id="@+id/size6"
+        android:title="1600 x 1200"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/size7"
+        android:title=" 2048 x 1536" />
+    <item
+        android:id="@+id/item2"
+        android:title="2560 x 1440" />
+    <item
+        android:id="@+id/size8"
+        android:title="2560 x 1536"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/size9"
+        android:title="2560 x 1920"
+        app:showAsAction="withText" />
+
+
+    <item
+        android:id="@+id/size10"
+        android:title="Full Mode"
+        app:showAsAction="withText" />
+
+</menu>
